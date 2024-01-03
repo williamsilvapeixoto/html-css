@@ -1,0 +1,35 @@
+html{
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    box-shadow: 1px 1px 4px gray;
+    margin: -8px;
+}
+.ln{
+    display: flex;
+    align-items: center;
+}
+.l{
+    width: 35px;
+    margin-bottom: 16px;
+    margin-left: 5px;
+}
+.hs{
+    flex-direction: column;
+    display: flex;
+    margin-right: 5px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+dt{
+    font-weight: bold;
+    margin: 5px;
+}

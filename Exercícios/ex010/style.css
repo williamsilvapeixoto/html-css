@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    
+    color: blue;
+    transition: 1ms;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a:focus-within{
+ color: red;
+}

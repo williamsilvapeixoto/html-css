@@ -1,0 +1,31 @@
+html{
+    font-family: sans-serif;
+}
+.logo{
+    width: 35px;
+    margin-bottom: 17px;
+    margin-left: 5px;
+}
+.header{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: whitesmoke;
+   box-shadow: 1px 1px 4px;
+   margin: -8px;
+   position: sticky;
+   top: 0;
+}
+.ln{
+    display: flex;
+    align-items: center;
+}
+.hs{
+    display: flex;
+    flex-direction: column;
+}
+.ha{
+    text-decoration: none;
+    color: gray;
+    margin-right: 5px;
+}

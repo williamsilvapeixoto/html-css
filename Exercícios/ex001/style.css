@@ -1,0 +1,98 @@
+html {
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+}
+.header{ 
+background-color: whitesmoke;
+   width: 100%;
+    max-width: 100%;
+    position: sticky;
+    top: 0;
+    flex-grow: 1;
+}
+.justifycontent{
+display: flex;
+justify-content:space-around;
+width: 450px;
+    height: 300px;
+    border: solid;
+    margin: 20px;
+}
+.alignitems{
+    display: flex;
+    align-items: flex-end;
+    width: 450px;
+    height: 300px;
+    border: solid;
+    margin: 20px;
+    align-content: flex-end;
+}
+.aligncontent{
+    display: flex;
+    align-content: flex-end;
+    width: 450px;
+    height: 300px;
+    border: solid;
+   margin: 20px;
+   
+}
+p{
+    flex-basis: 30;
+}
+
+.tatudobem{
+    border: solid 3px;
+    display: flex;
+   
+}
+.one{
+background-color: aqua;
+flex-basis: 100%;
+}
+.two{
+background-color: blueviolet;
+flex-basis: 30%;
+}
+.fg{
+    display: flex;
+    border: solid 3px;
+}
+.um{
+    background-color: blue;
+    color: white;
+    flex-grow: 2;
+}
+.dois{
+    background-color: brown;
+    color: white;
+    flex-grow: 1;
+}
+.tres{
+    background-color: black;
+    color: white;
+    flex-grow: 1;
+}
+a:focus-within{
+    background-color: gray;
+}
+.fs{
+    display: flex;
+    border: solid 3px;
+}
+.i{
+    background-color: limegreen;
+    flex-shrink: 0;
+   flex-basis: 200px;
+} 
+.ii{
+    background-color: gold;
+    flex-shrink: 0;
+    flex-basis: 400px;
+}
+.iii{
+    background-color: violet;
+    flex-shrink: 1;
+    flex-basis: 200px;
+}

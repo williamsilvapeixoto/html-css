@@ -1,0 +1,46 @@
+html{
+    font-family: sans-serif;
+}
+.husky{
+    width: 450px;
+}
+.wolfzlogo{
+width: 30px;
+height: 35px;
+margin-top: 3px;
+}
+.header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    justify-content:  space-between;
+    margin: -8px;
+    padding: 0;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 4px gray;
+}
+nav a{
+    transition: 1s; 
+}
+div{
+    display: flex;
+    margin-left: 5px;
+}
+nav{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ align-content: center;
+ margin-top: 10px;
+ margin-right: 10px;
+ transition: 1s;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+header{
+    margin: 0;
+    padding: 0;
+}

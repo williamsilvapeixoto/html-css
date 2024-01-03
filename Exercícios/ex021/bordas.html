@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Borda</title>
+    <style>
+        span{
+            border: 10px double darkgreen;
+            border-width: double;
+        }
+        abbr{
+            text-decoration: none;
+        }
+        .normal{
+            width: 300px;
+            height: 300px;
+            border: 10px solid blue;
+        }
+        .dashed{
+            width: 300px;
+            height: 300px;
+            border: 10px dashed blue;
+        }
+        .groove{
+            width: 300px;
+            height: 300px;
+            border: 10px groove blue;
+        }
+        .double{
+            width: 300px;
+            height: 300px;
+            border: 10px double blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilos de <abbr title="border-width: double;"><span>Borda</span></abbr></h1>
+    <hr>
+    <em>Passe o mouse por cima dos elementos com borda para saber que comando utilizar</em><br><br><br>
+    <abbr title="border-width: solid;">
+        <div class="normal"></div>
+    </abbr>
+    <br>
+    <abbr title="border-width: dashed;">
+        <div class="dashed"></div>
+    </abbr>
+    <br>
+    <abbr title="border-width: groove;">
+        <div class="groove"></div>
+    </abbr>
+    <br>
+    <abbr title="border-width: double;">
+        <div class="double"></div>
+    </abbr>
+</body>
+</html>

@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+html{
+padding: 0px;
+}
+body{
+    font: normal 1em Arial, Verdana, serif;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #1A8BDB, #1AC8DB, #1ADB6D);
+    padding: 0px;
+}
+h1{
+    text-align: center;
+    color: #1449DB;
+    text-shadow: 2px 3px 4px#6b93ff;
+}
+h2{
+    text-align: left;
+
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
+mark{
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bolder;
+    font-size: larger;
+}
+main{
+    margin: 60px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 10px 15px 20px #0a4c53;
+}
+div{
+    width: 100%;
+    height: 300px;
+    background-color: whitesmoke;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/*
+   em HTML é id = em CSS é #
+   em TML é class = em CSS é .
+*/
+
+/*
+   A diferença entre id e class é que o id é único, já o class pode ser utilizado múltiplas vezes
+*/
+
+/*
+  "Não dê nome as suas classes pela forma, e sim pela funcionalidade"
+*/
+
+body{ 
+    background-color: #3EE6DA;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #268b3f;
+}
+h2{
+    color: #5a8825;
+}
+h1#h2{
+   text-align: center;
+   background-color: #3EE6A1; 
+   color: rgb(107, 95, 95);
+}
+.basico{
+color: green;
+}
+.intermediario{
+color: orange;
+}
+.avancado{
+color: red;
+}
