@@ -15,15 +15,43 @@
          width: 400px;
          border-collapse: collapse;
          margin: auto;
+         position: relative;
+      }
+      caption{
+         font-weight: bold;
+         font-size: large;
+         border: 1px solid black;
+         margin-bottom: 0.5px;
+         padding: 10px;
+         background-color: rgb(151, 150, 150);
+      }
+      thead{
+         position: sticky;
+         top: 0;
       }
       thead, tfoot{
-         background-color: lightgray;
+         background-color: rgb(90, 90, 90);
+         color: rgb(0, 0, 0);
+      }
+      tbody > tr:nth-child(odd){ 
+         /* ÍMPAR */
+         /* Pode também utilizar 2n-1 */
+
+
+         background-color: lightblue;
+      }
+      tbody > tr:nth-child(even){ 
+         /* PAR */
+         /* Pode também utilizar 2n */
+
+
+         background-color: rgb(209, 208, 208);
       }
       th, td{
          border: 1px solid black;
       }
       td{
-         padding: 2px;
+         padding: 5px;
       }
        .num{
          text-align: right;
@@ -39,6 +67,7 @@
          ANATOMIA PARA TABELAS GRANDES
 
          TABLE
+         CAPTION  
            THEAD
               TR, TD, TH
            TBODY
@@ -47,11 +76,12 @@
               TR, TD, TH
     -->
     <table>
+      <caption>População das Unidades Federativas</caption>
         <thead>
            <tr>
-             <th>Estado</th>
-             <th>População</th>
-             <th>% da pop. <br>total</th>
+             <th scope="row">Estado</th>
+             <th scope="col">População</th>
+             <th scope="col">% da pop. <br>total</th>
            </tr>
         </thead>
         <tbody>
@@ -194,11 +224,16 @@
         </tbody>
         <tfoot>
                <tr>
-                  <th>Total de Habitantes</th>
+                  <th scope="row">Total de Habitantes</th>
                   <td class="num">210 147 125</td>
                   <td class="por">100%</td>
                </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellat commodi ducimus ab reprehenderit officiis mollitia aliquid expedita accusantium eius. Nostrum facilis dicta quisquam magnam possimus cum quo id officiis!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic porro vel nemo illum, error deleniti. Voluptas mollitia tenetur dolor voluptatem reiciendis, nobis similique, dolores quis sed laboriosam quidem possimus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet nulla veritatis laboriosam. Praesentium inventore a dolore aliquid nihil aliquam deleniti vitae ipsam corporis? Ipsa totam, assumenda saepe itaque eius commodi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aliquam reiciendis veniam suscipit dolores autem exercitationem est quis aperiam laborum labore saepe sed earum recusandae impedit, deleniti voluptates sint nostrum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eum sequi eligendi reprehenderit optio, deserunt, eveniet temporibus a voluptatibus rem odio laudantium necessitatibus quia! Cupiditate distinctio impedit, fugiat et explicabo dolore voluptate minima reiciendis, sunt officia fugit quod, quae tempora vel nemo repellendus? Architecto quisquam sequi, ipsa placeat doloremque modi reiciendis esse consequuntur vitae, velit magni cumque quos iure non illum facere nam reprehenderit illo, laudantium natus recusandae dolores? Voluptatum tempora assumenda repellat vitae rerum officia molestiae soluta necessitatibus nostrum corporis amet reprehenderit repudiandae et veniam fugit, sapiente minus quo nesciunt porro ex vel id illo praesentium. Doloribus, fugiat sint provident culpa impedit sapiente distinctio eligendi, perferendis totam nam laborum et, saepe at ratione nulla vitae ullam rerum. Voluptates nihil provident itaque sit laboriosam sint deserunt fugit harum ipsum natus nam dignissimos, mollitia odio nulla labore numquam dolore est totam error! Sequi labore iste voluptatum cupiditate optio pariatur tempore consequatur consectetur? Maiores minima illo tempora aliquam rerum alias? Id ipsam rem mollitia laborum saepe ut laudantium fugiat magni nihil similique vel, eum amet ducimus quisquam quae dolorum ex quidem ea odio inventore alias. Facilis laboriosam accusantium, itaque ab sed recusandae vitae molestiae eveniet eos cum adipisci, esse voluptatibus nobis ipsa!</p>
 </body>
 </html>
