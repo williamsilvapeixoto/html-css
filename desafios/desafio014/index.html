@@ -15,6 +15,24 @@
         th, td{
             border: 1px solid black;
         }
+        th{
+          padding: 5px;
+          color: white;
+          background-color: gray;
+        }
+        th.media{
+          text-align: left;
+        }
+        th.tipo{
+          color: black;
+          background-color: white;
+        }
+        td{
+          padding: 3px;
+        }
+        td.notas{
+          text-align: center;
+        }
      </style>
 </head>
 <body>
@@ -33,7 +51,7 @@
         </thead>
         <tbody>
               <tr>
-                  <th rowspan="4" scope="rowgroup">Exatas</th>
+                  <th rowspan="4" scope="rowgroup" class="tipo">Exatas</th>
                   <td>Matemática</td>
                   <td class="notas">0.0</td>
                   <td class="notas">0.0</td>
@@ -41,41 +59,41 @@
               </tr>
               <tr>
                 <td>Física</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
               </tr>
               <tr>
                 <td>Química</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
               </tr>
               <tr>
                 <td>Biologia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
               </tr>
               <tr>
-                <th colspan="4">Média de Exatas</th>
+                <th colspan="4" class="media">Média de Exatas</th>
                 <th class="notas">0.0</th>
               </tr>
               <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup" class="tipo">Humanas</th>
                 <td>História</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
               </tr>
               <tr>
                 <td>Geografia</td>
-                <td>0.0</td>
-                <td>0.0</td>
-                <td>0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
+                <td class="notas">0.0</td>
               </tr>
               <tr>
-                <th colspan="4">Média de Humanas</th>
+                <th colspan="4" class="media">Média de Humanas</th>
                 <th>0.0</th>
               </tr>
         </tbody>
