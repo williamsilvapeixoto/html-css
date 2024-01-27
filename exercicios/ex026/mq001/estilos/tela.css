@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    background-image: linear-gradient(to bottom, lightgray, rgb(83, 83, 83));
+}
+
+header h1{
+    text-align: center;
+    padding: 20px;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header > menu > ul > a{
+    margin: 0 2.5px 7px 2.5px;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+main h2{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+main p{
+    line-height: 1.4em;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+article{
+    max-width: 700px;
+    margin: auto;
+    background-color: rgb(142, 255, 142);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.278);
+}
