@@ -14,18 +14,33 @@
 @media print { /* IMPRESSÃO */
     *{
         font-family: 'Courier New', Courier, monospace;
+        
     }
 
     body{
-        background-image: url('../imagens/back-print.jpg');
+        background-image: url('../imagens/back-print.jpg'); /* desnecessário */
+    }
+
+    main{
+        border: 2px solid black;
     }
 
     h1{
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.293);
+        text-shadow: none;
+    }
+
+    hr{
+        display: block;
     }
 
     img#cll{ display: none; }
     img#print{ display: block; }
+
+    footer p{
+        display: block;
+        margin: 10px 20px 0 33px;
+        font-style: italic;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){ /* TABLET */
@@ -49,6 +64,7 @@
 @media screen and (min-width: 1200px){ /* GRANDES TELAS */
     body{
         background-image: url('../imagens/back-tv.jpg');
+        background-position: center center;
     }
 
     img#cll{ display: none; }
