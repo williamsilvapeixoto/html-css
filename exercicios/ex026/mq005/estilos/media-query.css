@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px){
+    div.menu{ display: none; }
+    nav#imenutm{ display: block; }
+}
+
+@media print {
+    div.menu{ display: none; }
+    nav#imenutm{ display: none; }
+
+    header{
+        box-shadow: none;
+    }
+
+    main{
+        box-shadow: none;
+    }
+
+    footer{
+        display: block;
+    }
+}
