@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* Typical Devices Breakpoints
+----------------------------------
+    Pequenas telas: até 600px
+    Celular: de 601px até 768px
+    Tablet: de 769px até 992px
+    Desktops: de 993px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #121111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    /* Alinha na horizontal */
+    align-items: center;
+    /* Alinha na vertical */
+    padding: 20px 10px;
+    color: white;
+}
+
+#imenu li{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+#imenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#imenu a:hover{
+    text-decoration: underline;
+    transform: scale(105%);
+}
+
+main h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+section#gl-2 img{
+    width: 100%;
+    display: block;
+}
+
+section#gl-2 div > p{
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+
+/* CSS GRID 2 */
+
+section#gl-2{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#sidebar{
+    overflow: scroll;
+    height: 100vh;
+}
+
+@media (max-width: 768px){
+    section#gl-2{
+        grid-template-columns: 1fr;
+    }
+
+    section#video{
+        margin-bottom: 50px;
+        background-color: white;
+    }
+
+    section#video h2{
+        padding: 10px;
+    }
+
+    section#sidebar{
+        display: flex;
+        column-gap: 10px;
+        height: auto;
+        width: 95vw;
+        overflow-y: hidden;
+    }
+
+    #sidebar div{
+        flex: 1 0 200px;
+    }
+}

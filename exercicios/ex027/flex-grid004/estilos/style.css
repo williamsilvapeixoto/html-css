@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* Typical Devices Breakpoints
+----------------------------------
+    Pequenas telas: até 600px
+    Celular: de 601px até 768px
+    Tablet: de 769px até 992px
+    Desktops: de 993px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #121111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    /* Alinha na horizontal */
+    align-items: center;
+    /* Alinha na vertical */
+    padding: 20px 10px;
+    color: white;
+}
+
+#imenu li{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+#imenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#imenu a:hover{
+    text-decoration: underline;
+    transform: scale(105%);
+}
+
+main h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+section#gl-3 img{
+    width: 100%;
+    display: block;
+}
+
+section#gl-3 div > p{
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+
+/* CSS GRID 3 */
+
+#gl-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+div.pi{
+    grid-row: 1 / 3;
+}
+
+#gl-3 div{
+    display: grid;
+}
+
+#gl-3 div img{
+    grid-column: 1;
+
+
+    grid-row: 1/3; /* Legenda sobre a imagem */
+}
+
+#gl-3 div p{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+    color: white;
+    grid-column: 1;
+    grid-row: 2; /* legenda sobre a imagem */
+}

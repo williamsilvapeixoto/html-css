@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* Typical Devices Breakpoints
+----------------------------------
+    Pequenas telas: até 600px
+    Celular: de 601px até 768px
+    Tablet: de 769px até 992px
+    Desktops: de 993px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #121111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    /* Alinha na horizontal */
+    align-items: center;
+    /* Alinha na vertical */
+    padding: 20px 10px;
+    color: white;
+}
+
+header span{
+    cursor: pointer;
+    padding: 10px;
+}
+
+#imenu{
+    display: none;
+}
+
+#imenu li{
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+#imenu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#imenu a:hover{
+    text-decoration: underline;
+    transform: scale(105%);
+}
+
+main h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+section#gl-1 img{
+    width: 100%;
+    display: block;
+}
+
+section#gl-1 div > p{
+    font-size: 1.1em;
+    padding: 5px;
+}
+
+
+
+/* CSS GRID 1 */
+
+section#gl-1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 8px;
+    row-gap: 0px;
+    /* Espaço entre os itens 
+       OBS: A propriedade "grid-gap" está obsoleta.
+    */
+
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/* Começa a modificar desde o quarto item */
+section#gl-1 > div:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Tem que especificar o item para modificá-lo aqui. O por quê? Também não sei. */
+section#gl-1 > div#ad{
+    display: block;
+    grid-column: 1;
+
+    grid-row: 2 / 5;
+    /* Pega da segunda até a quinta linha */
+}
+
+@media (max-width: 768px) {
+    section#gl-1{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    section#gl-1 > div:nth-child(n + 4){
+        display: block;
+    }
+
+    section#gl-1 > div#ad{
+        grid-row: 3;
+        grid-column: 1;
+        
+
+       /* order: -1;  -1 ou 1 */
+    }
+}

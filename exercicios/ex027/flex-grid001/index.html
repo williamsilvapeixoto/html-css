@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid e Flexbox</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+
+    <header>
+        <p>logo</p>
+        <nav id="imenu">
+            <ul type="none">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+        <span class="material-symbols-outlined" onclick="menu()">menu</span>
+    </header>
+
+
+
+    <main>
+        <h1>Section Flexbox</h1>
+        <section id="fb">
+            <div>
+                <img src="imagens/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="imagens/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="imagens/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="imagens/lobo2.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="imagens/lobo1.jpg">
+                <p>Legenda</p>
+            </div>
+            <div>
+                <img src="imagens/lobo3.jpg">
+                <p>Legenda</p>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script>
+        function menu(){
+           if (imenu.style.display == 'block'){
+                imenu.style.display = 'none'
+           } else {
+                imenu.style.display = 'block'
+           }
+        }
+    </script>
+</body>
+</html>

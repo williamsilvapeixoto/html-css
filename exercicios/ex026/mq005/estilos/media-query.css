@@ -6,6 +6,10 @@
 }
 
 @media print {
+    *{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
     div.menu{ display: none; }
     nav#imenutm{ display: none; }
 
