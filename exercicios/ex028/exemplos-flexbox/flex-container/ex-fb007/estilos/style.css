@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+section{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    max-width: 500px;
+}
+
+section > div{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+}
+
+section > div div{
+    background-color: tomato;
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+div#pi{
+    flex: 1 0 210px;
+}
+
+div.ne{
+    flex: 1 0;
+}
+
+div.ui{
+    flex: 1 0 200px;
+}
+
+div.fi{
+    flex: 1;
+}
+
+
+
+/* CSS FLEXBOX */
+
+
+.ac-s{
+    align-content: stretch;
+}
+
+.ac-fs{
+    align-content: flex-start;
+
+    /*
+    
+    align-items alinha os itens 
+    idependentemente, já o align-content 
+    alinha todo o conteúdo
+    
+    */
+}
+
+.ac-fe{
+    align-content: flex-end;
+}
+
+.ac-c{
+    align-content: center;
+}
+
+.ac-sb{
+    align-content: space-between;
+}
+
+.ac-sa{
+    align-content: space-around;
+}
+
+#ali-central{
+    justify-content: center;
+    align-content: center;
+}
+
+#ali-central > div{
+    width: 110px;
+}
