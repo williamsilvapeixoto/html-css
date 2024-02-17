@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    margin-bottom: 15px;
+}
+
+section{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto 40px auto;
+    max-width: 600px;
+}
+
+section > div{
+    border: 1px solid black;
+    display: flex;
+}
+
+section > div div{
+    background-color: tomato;
+    margin: 5px;
+    padding: 2px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
+/* CSS FLEXBOX */
+
+
+div#fg-0 > div{
+    flex-grow: 0;
+}
+
+div#fg-1 > div{
+    flex-grow: 1;
+
+    /* Os itens se expandem igualmente para ocupar o container, utilizando apenas o flex-grow. O crescimento é distribuído igualmente antes e depois do conteúdo de cada elemento, pois o flex-basis, por padrão, é auto */
+}
+
+div#fg-2 > div{
+    flex-grow: 2;
+
+    /* Os itens se expandem duas vezes mais que aqueles com flex-grow: 1; Aqui nada muda, pois todos os itens tem o mesmo número de crescimento */
+}
+
+div#fg-1-cl > div{
+    flex-grow: 1;
+}
+
+div#fg-x > div:nth-child(1){
+    flex-grow: 1;
+}
+
+div#fg-x > div:nth-child(2){
+    flex-grow: 2;
+}
+
+div#fg-x > div:nth-child(3){
+    flex-grow: 3;
+}

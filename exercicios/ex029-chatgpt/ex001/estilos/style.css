@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --verde: green;
+    --roxo: purple;
+    --laranja: orange;
+    --amarelo: yellow;
+    --azul: blue;
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+#container{
+    border: 1px solid black;
+    margin: 30px auto;
+    max-width: 500px;
+
+    display: flex;
+}
+
+#container > div{
+    padding: 5px;
+}
