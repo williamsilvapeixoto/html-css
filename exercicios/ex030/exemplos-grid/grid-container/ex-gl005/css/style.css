@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > section:nth-child(2n){
+    background-color: #ececec;
+}
+
+section{
+    padding: 40px 0;
+}
+
+section > h1{
+    text-align: center;
+    padding: 0 10px;
+}
+
+section > div{
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid;
+    background: white;
+}
+
+section > div > div{
+    background: tomato;
+    margin: 5px;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+/* Configurações Gerais */
+
+
+section.gt-c-um > div{
+    display: grid;
+    grid-template: 100px 1fr / 100px 1fr 100px;
+}
+
+section.gt-acr > div{
+    display: grid;
+    grid-template: 
+        "logo nav nav" 1fr
+        "sidenav content advert" 4fr
+        "sidenav footer footer" 2fr
+        / 2fr 5fr 70px
+    ;
+
+}
+
+.lg{
+    grid-area: logo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.snav{
+    grid-area: sidenav;
+}
+
+.cnt{
+    grid-area: content;
+}
+
+.ad{
+    grid-area: advert;
+}
+
+.ft{
+    grid-area: footer;
+}

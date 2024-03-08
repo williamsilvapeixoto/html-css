@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > section:nth-child(2n){
+    background-color: #ececec;
+}
+
+section{
+    padding: 40px 0;
+}
+
+section > h1{
+    text-align: center;
+    padding: 0 10px;
+}
+
+section > div{
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid;
+    background: white;
+}
+
+section > div > div{
+    background: tomato;
+    margin: 5px;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+/* Configurações Gerais */
+
+
+section.gta-1 > div{
+    display: grid;
+    grid-template-areas: 
+        "logo nav nav"
+        "sidenav content advert"
+        "sidenav footer footer"
+    ;
+    grid-template-rows: 1fr 4fr 1fr;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.sidenav{
+    grid-area: sidenav;
+}
+
+.content{
+    grid-area: content;
+}
+
+.advert{
+    grid-area: advert;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+section.gta-2 > div{
+    display: grid;
+    grid-template-areas: 
+        "sidenav logo nav"
+        "sidenav content advert"
+        "sidenav content footer"
+    ;
+}
+
+section.gta-3 > div{
+    display: grid;
+    grid-template-areas: 
+        "logo logo"
+        "nav nav"
+        "content content"
+        "sidenav advert"
+        "footer footer"
+    ;
+}
+
+section.gta-4 > div{
+    display: grid;
+    grid-template-columns: 100px auto 50px;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-areas: 
+        "logo nav nav"
+        "sidenav content advert"
+        "sidenav footer footer"
+    ;
+}
+
+section.gta-5 > div{
+    display: grid;
+    grid-template-areas: 
+        "logo content nav"
+        "logo content advert"
+        "sidenav footer ."
+    ;
+}
