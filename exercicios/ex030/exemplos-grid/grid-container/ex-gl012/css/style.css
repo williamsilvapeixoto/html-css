@@ -38,13 +38,20 @@ section > div > div{
 /* Configurações Gerais */
 
 
-section.jc-s > div{
-    display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: start;
-} 
+section > div{
+    height: calc(5*70px);
+}
 
-.i2, .i3{
+section.ac-s > div{
+    display: grid;
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+}
+
+.i2{
+    grid-row: span 2;
+}
+
+.i3{
     grid-row: span 2;
 }
 
@@ -52,38 +59,38 @@ section.jc-s > div{
     grid-column: span 2;
 }
 
-section.jc-e > div{
+section.ac-e > div{
     display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: end;
-} 
-
-section.jc-c > div{
-    display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: center;
-} 
-
-section.jc-st > div{
-    display: grid;
-    grid-template-rows: repeat(3, 125px);
-    justify-content: stretch;
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+    align-content: end;
 }
 
-section.jc-sa > div{
+section.ac-c > div{
     display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: space-around;
-} 
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+    align-content: center;
+}
 
-section.jc-sb > div{
+section.ac-st > div{
     display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: space-between;
-} 
+    grid-template-columns: repeat(3, 1fr);
+    align-content: stretch;
+}
 
-section.jc-se > div{
+section.ac-sa > div{
     display: grid;
-    grid: repeat(3, 125px) / repeat(3, 125px);
-    justify-content: space-evenly;
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+    align-content: space-around;
+}
+
+section.ac-sb > div{
+    display: grid;
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+    align-content: space-between;
+}
+
+section.ac-se > div{
+    display: grid;
+    grid-template: repeat(3, 70px) / repeat(3, 1fr);
+    align-content: space-evenly;
 }

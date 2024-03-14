@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > section:nth-child(2n){
+    background-color: #ececec;
+}
+
+section{
+    padding: 40px 0;
+}
+
+section > h1{
+    text-align: center;
+    padding: 0 10px;
+}
+
+section > div{
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid;
+    background: white;
+}
+
+section > div > div{
+    background: tomato;
+    margin: 5px;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+/* Configurações Gerais */
+
+
+section.ga1 > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ga1 .i1{
+    grid-area: 1 / 2 / 4 / 3; 
+    /* Shorthand para isso abaixo */
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-row-end: 4;
+    grid-column-end: 3;
+}
+
+.ga1 .i5{
+    grid-area: 2/3/4;
+}
+
+section.ga2 > div{
+    display: grid;
+    grid-template-areas: 
+        "hd hd hd"
+        "snav cnt ad"
+        "snav ft ft"
+    ;
+}
+
+.ga2 .i1{
+    grid-area: hd;
+}
+
+.ga2 .i2{
+    grid-area: snav;
+}
+
+.ga2 .i3{
+    grid-area: cnt;
+}
+
+.ga2 .i5{
+    grid-area: ft;
+}
+
+section.ga3 > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    max-width: 440px;
+}
+
+.ga3 .i1{
+    grid-area: 2/2/4/5;
+    background-color: rgb(255, 0, 0);
+    mix-blend-mode: screen;
+}
+
+.ga3 .i2{
+    grid-area: 3/3/6/5;
+    background-color: rgb(0, 255, 0);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.ga3 .i12{
+    grid-area: 1/4/7/6;
+    background-color: rgb(0, 0, 255);
+    mix-blend-mode: screen;
+}

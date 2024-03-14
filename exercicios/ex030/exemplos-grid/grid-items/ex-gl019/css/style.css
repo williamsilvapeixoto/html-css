@@ -1,0 +1,133 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body > section:nth-child(2n){
+    background-color: #ececec;
+}
+
+section{
+    padding: 40px 0;
+}
+
+section > h1{
+    text-align: center;
+    padding: 0 10px;
+}
+
+section > div{
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid;
+    background: white;
+}
+
+section > div > div{
+    background: tomato;
+    margin: 5px;
+    padding: 8px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+/* Configurações Gerais */
+
+
+section.as-s > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.as-s .i2{
+    grid-row: span 2;
+    align-self: start;
+    padding: 0;
+}
+
+.as-s .i3{
+    grid-row: span 2;
+}
+
+.as-s .i5{
+    grid-column: span 2;
+    grid-column: span 2;
+    align-self: start;
+    padding: 0;
+}
+
+section.as-e > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.as-e .i2{
+    grid-row: span 2;
+    align-self: end;
+    padding: 0;
+}
+
+.as-e .i3{
+    grid-row: span 2;
+}
+
+.as-e .i5{
+    grid-column: span 2;
+    grid-column: span 2;
+    align-self: end;
+    padding: 0;
+}
+
+section.as-c > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.as-c .i2{
+    grid-row: span 2;
+    align-self: center;
+    padding: 0;
+}
+
+.as-c .i3{
+    grid-row: span 2;
+}
+
+.as-c .i5{
+    grid-column: span 2;
+    grid-column: span 2;
+    align-self: center;
+    padding: 0;
+}
+
+section.as-st > div{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    grid-template-rows: repeat(3, 50px);
+    align-items: start;
+}
+
+section.as-st > div > div{
+    padding: 0 !important;
+}
+
+.as-st .i2{
+    grid-row: span 2;
+    align-self: stretch;
+    padding: 8px;
+}
+
+.as-st .i3{
+    grid-row: span 2;
+}
+
+.as-st .i5{
+    grid-column: span 2;
+    grid-column: span 2;
+    align-self: stretch;
+    padding: 8px;
+}
