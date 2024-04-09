@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+@keyframes btldgspn{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+        border-color: transparent;
+    }
+}
+
+@keyframes carregado{
+    from{
+        background-color: lightgray;
+    }
+    to{
+        background-color: rgb(66, 255, 66);
+    }
+}
+
+@keyframes check{
+    from{
+        opacity: 0;
+    } 
+    to{
+        opacity: .4;
+    }
+}
+
+@keyframes h2{
+    from{
+        left: -30px;
+        opacity: .6;
+    }
+    to{
+        left: 20px;
+        opacity: 1;
+    }
+}
+
+@keyframes h2{
+    from{
+        left: -30px;
+        opacity: .6;
+    }
+    to{
+        left: 20px;
+        left: 15px;
+        opacity: 1;
+    }
+}
+
+@keyframes after{
+    0%{
+        left: -15px;
+    }
+    50%{
+        left: 0;
+        width: 110px;
+    }
+    100%{
+        left: -10px;
+        width: 100px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Comfortaa, Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    padding: 20px 0 40px;
+}
+
+h2{
+    position: relative;
+    animation: 1s h2 both;
+    padding: 30px 0 60px 0;
+}
+
+h2::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 55px;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(25, 25, 255);
+    animation: 1s after 1s both;
+}
+
+section.btn-vfct{
+    display: grid;
+    place-items: center;
+}
+
+section.btn-vfct > button{
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 3px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    position: relative;
+    animation: 1s carregado 1s both;
+}
+
+section.btn-vfct > button > div.ldg-spn{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgb(255,255,255);
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: 1.5s btldgspn both;
+}
+
+img{
+    position: absolute;
+    width: 40px;
+    animation: .5s check 1.5s both;
+}
