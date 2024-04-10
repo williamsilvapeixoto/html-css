@@ -141,13 +141,94 @@ div.fb{
     background-color: lightgray;
     animation: 2s bf 0s ease-in-out infinite alternate;
 }
-/*
-section > div.fb::after{
-    content: '';
-    position: absolute;
-    bottom: 50px;
-    height: 100px;
-    width: 100px;
+
+div.anim-rdc{
+    display: grid;
+    place-items: center;
+}
+
+div.pneu{
+    width: 200px;
+    height: 200px;
+    border: 25px solid black;
     border-radius: 50%;
+    position: relative;
+}
+
+div.calota{
+    width: 130px;
+    height: 130px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.ldc{
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.ldc::before{
+    content: '';
+    width: 50px;
+    height: 10px;
     background-color: black;
-}*/
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+}
+
+div.ldc::after{
+    content: '';
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+div.ldc2{
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    top: 36.5%;
+    /*transform: translate(0%, -60%);*/
+    transform: rotate(270deg);
+}
+
+div.ldc2::before{
+    content: '';
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+}
+
+div.ldc2::after{
+    content: '';
+    width: 50px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
