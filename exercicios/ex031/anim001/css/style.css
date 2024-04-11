@@ -66,6 +66,15 @@
     }
 }
 
+@keyframes rdca {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -153,6 +162,7 @@ div.pneu{
     border: 25px solid black;
     border-radius: 50%;
     position: relative;
+    animation: 1s rdca 0s linear infinite;
 }
 
 div.calota{
@@ -169,7 +179,7 @@ div.calota{
 div.ldc{
     width: 30px;
     height: 30px;
-    border: 10px solid black;
+    border: 15px solid black;
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -299,4 +309,11 @@ div.ldc4::after{
     left: 50%;
     top: 50%;
     transform: translate(10%, -50%);
+}
+
+div.poeira{
+    width: 80px;
+    height: 80px;
+    background-color: gray;
+    margin: 5px;
 }
