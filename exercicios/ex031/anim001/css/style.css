@@ -179,7 +179,7 @@ div.ldc{
 
 div.ldc::before{
     content: '';
-    width: 50px;
+    width: 55px;
     height: 10px;
     background-color: black;
     position: absolute;
@@ -190,7 +190,7 @@ div.ldc::before{
 
 div.ldc::after{
     content: '';
-    width: 50px;
+    width: 55px;
     height: 10px;
     background-color: black;
     position: absolute;
@@ -213,7 +213,7 @@ div.ldc2{
 
 div.ldc2::before{
     content: '';
-    width: 50px;
+    width: 55px;
     height: 10px;
     background-color: black;
     position: absolute;
@@ -224,7 +224,75 @@ div.ldc2::before{
 
 div.ldc2::after{
     content: '';
-    width: 50px;
+    width: 55px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+div.ldc3{
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    transform: rotate(315deg);
+}
+
+div.ldc3::before{
+    content: '';
+    width: 55px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+}
+
+div.ldc3::after{
+    content: '';
+    width: 55px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(10%, -50%);
+}
+
+div.ldc4{
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+    border-radius: 50%;
+    position: absolute;
+    left: 37%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    transform: rotate(405deg);
+}
+
+div.ldc4::before{
+    content: '';
+    width: 55px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    transform: translate(-110%, -50%);
+}
+
+div.ldc4::after{
+    content: '';
+    width: 55px;
     height: 10px;
     background-color: black;
     position: absolute;
