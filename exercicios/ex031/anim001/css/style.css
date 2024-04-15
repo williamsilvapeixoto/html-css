@@ -170,15 +170,12 @@ div.fb{
     animation: 2s bf 0s ease-in-out infinite alternate;
 }
 
-section.rdc-anim{
-    background-color: blue;
-}
-
 div.anim-rdc{
     display: grid;
     justify-content: center;
     grid-template-columns: 2fr 1fr;
     padding: 0 41px 0 10px;
+    overflow: hidden;
 }
 
 div.anim-rdc > div.poeiras{
