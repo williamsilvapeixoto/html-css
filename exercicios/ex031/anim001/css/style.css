@@ -71,7 +71,22 @@
         transform: rotate(0deg);
     }
     100%{
-        transform: rotate(360deg);
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes anim-poeira{
+    0%{
+        right: 0;
+        bottom: 0;
+    }
+    50%{
+        right: 75px;
+        bottom: 50px;
+    }
+    100%{
+        right: 150px;
+        bottom: 0;
     }
 }
 
@@ -80,6 +95,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Comfortaa, Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding-bottom: 50px;
 }
 
 h1{
@@ -151,9 +170,60 @@ div.fb{
     animation: 2s bf 0s ease-in-out infinite alternate;
 }
 
+section.rdc-anim{
+    background-color: blue;
+}
+
 div.anim-rdc{
     display: grid;
-    place-items: center;
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+    padding: 0 41px 0 10px;
+}
+
+div.anim-rdc > div.poeiras{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: relative;
+    right: -45px;
+}
+
+div.poeira{
+    background-color: gray;
+    margin: 5px;
+    position: absolute;
+    right: 0;
+}
+
+div.p1{
+    width: 25px;
+    height: 25px;
+    animation: 0.5s anim-poeira 0s linear infinite;
+}
+
+div.p2{
+    width: 33px;
+    height: 33px;
+    animation: 0.5s anim-poeira 0.4s linear infinite;
+}
+
+div.p3{
+    width: 20px;
+    height: 20px;
+    animation: 0.5s anim-poeira 0.9s linear infinite;
+}
+
+div.p4{
+    width: 15px;
+    height: 15px;
+    animation: 0.5s anim-poeira 1.3s linear infinite;
+}
+
+div.p5{
+    width: 22px;
+    height: 22px;
+    animation: 0.5s anim-poeira 1.7s linear infinite;
 }
 
 div.pneu{
@@ -161,8 +231,8 @@ div.pneu{
     height: 200px;
     border: 25px solid black;
     border-radius: 50%;
-    position: relative;
-    animation: 1s rdca 0s linear infinite;
+    /*position: relative;*/
+    animation: 1.5s rdca 0s linear infinite;
 }
 
 div.calota{
@@ -309,11 +379,4 @@ div.ldc4::after{
     left: 50%;
     top: 50%;
     transform: translate(10%, -50%);
-}
-
-div.poeira{
-    width: 80px;
-    height: 80px;
-    background-color: gray;
-    margin: 5px;
 }
