@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section#anim-top{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../pexels-pixabay-247599.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    animation: anim 1s 0s linear infinite;
+}
+@keyframes anim{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    background: url('../PjzFVL-rain-png-images.png');
+    background-size: cover;
+    animation: rain .4s 0s linear infinite;
+}
+@keyframes rain{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    100%{
+        top: 20px;
+        left: -20px;
+    }
+}

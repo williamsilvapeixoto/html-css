@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Animação de CSS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>Faça login no nosso site</h1>
+        <button id="ativaranim">Ativar</button>
+        <form id="form" autocomplete="on">
+            <h2>Login</h2>
+            <section class="email">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" autocomplete="email" required>
+            </section>
+            <section class="senha">
+                <label for="senha">Senha</label><br>
+                <input type="password" name="password" id="password" autocomplete="current-password" required>
+            </section>
+            <input type="submit" value="Entrar" onclick="loading()">
+        </form>
+        <div id="loading"></div>
+    </main>
+
+    <script>
+        ativaranim.addEventListener('click', () => {
+            form.classList.toggle('anima');
+            animaranim.innerText.toggle('Desativar');
+        });
+
+        function loading(){
+            if(entrar.Style.Display == 'none'){
+                entrar.Style.Display = 'block';
+            }else{
+                entrar.Style.Display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
