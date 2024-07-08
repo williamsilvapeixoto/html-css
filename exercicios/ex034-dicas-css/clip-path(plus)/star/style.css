@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding-bottom: 30px;
+}
+
+.star{
+    background: yellow;
+    width: 300px;
+    height: 300px;
+    clip-path: polygon(
+     50% 0%,
+     65% 35%,
+     100% 40%,
+     70% 58%,
+     85% 100%,
+     50% 75%,
+     15% 100%,
+     30% 58%,
+     0% 40%,
+     38% 35%
+     );
+}
+
+.svg-path{
+    clip-path: url(#svg-path);
+    height: 300px;
+    width: 300px;
+    background-image: url(../../img/day.jpg);
+}
+
+.card-path{
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: red;
+    padding: 20px;
+    position: relative;
+    clip-path: circle(30px at 92.2% 16%);
+    border-radius: 20px;
+    transition-duration: 0.3s;
+    cursor: default;
+}
+
+.card-path:hover{
+    clip-path: circle(250px at center);
+    background-color: rgb(41, 255, 52);
+}
+
+.card-path > h1{
+    font-size: 2em;
+    padding-bottom: 30px;
+}
+
+.card-path > p{
+    text-indent: 20px;
+}
+
+.icon{
+    text-align: end;
+    position: absolute;
+    right: 30px;
+    color: white;
+}

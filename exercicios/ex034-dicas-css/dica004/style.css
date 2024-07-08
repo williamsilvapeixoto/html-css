@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@keyframes seta-ellipsis {
+    from{
+        top: 0px;
+    }
+    to{
+        top: -10px;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GERAL SETTINGS */
+                                    
+div > p{
+    width: 200px;
+    overflow: hidden; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div > p::after{
+    content: '→';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 170px;
+    transform: rotate(-90deg);
+    animation: alternate;
+    animation-duration: 1s;
+    animation-name: seta-ellipsis;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+div > p::before{
+    content: 'Reticências';
+    font-size: 0.8em;
+    position: absolute;
+    font-family: monospace;
+    top: 50px;
+    left: 150px;
+}

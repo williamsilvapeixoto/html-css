@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GERAL SETTINGS */
+
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#container{
+    height: 200px;
+    width: 300px;
+    background-image: url('../img/night.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    cursor: pointer;
+}
+
+div#container::after{
+    content: "";
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+}
+
+div#container:hover{
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.4);
+    transform: translate(-48%, 22%);
+}
+
+div#container:hover::after{
+    backdrop-filter: blur(0px);
+}

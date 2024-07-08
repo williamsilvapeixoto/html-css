@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GERAL SETTINGS */
+
+div{
+    margin: 30px auto;
+}
+
+.clip-path-exemplo{
+    clip-path: circle(50% at 50% 50%);
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+}
+
+.clip-path-exemplo-star{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+}
