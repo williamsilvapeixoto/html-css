@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background: lightcyan;
+    display: flex;
+}
+
+.item{
+    background: lightcoral;
+    border: 1px solid;
+    flex: auto;
+    text-align: center;
+    margin: 4px;
+}
