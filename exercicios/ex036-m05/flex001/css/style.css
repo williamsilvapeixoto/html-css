@@ -9,12 +9,14 @@
 .container{
     background: lightcyan;
     display: flex;
+    flex-wrap: wrap;
+
 }
 
 .item{
     background: lightcoral;
     border: 1px solid;
-    flex: auto;
+    flex: 1;
     text-align: center;
     margin: 4px;
 }
