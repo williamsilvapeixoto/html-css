@@ -10,12 +10,10 @@
     background: lightcyan;
     display: flex;
     flex-flow: row wrap;
-    align-items: space-between;
+    align-items: flex-end;
     margin: 50px;
     position: relative;
     height: 500px;
-    align-items: center;
-    align-content: center;
     gap: 10px;
 }
 
@@ -23,7 +21,7 @@
     content: '';
     background: black;
     position: absolute;
-    width: 500px;
+    width: 90%;
     height: 1px;
     top: -19px;
 }

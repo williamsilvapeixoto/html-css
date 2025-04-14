@@ -4,22 +4,43 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 .container{
     background: lightcyan;
     display: flex;
     flex-flow: wrap;
-    gap: 6px;
-    justify-content: stretch;
-    align-content: stretch;
+    height: 200px;
 }
 
 .item{
     background: lightcoral;
     border: 1px solid;
     text-align: center;
-    flex: auto;
-    padding: 20px;
     margin: 4px;
+    flex: 1;
+}
+
+.i1{
+    flex-basis: 700px;
+    flex-shrink: 3;
+}
+.i2{
+    flex-basis: ;
+}
+.i3{
+   flex-basis: ;
+}
+.i4{
+    flex-basis: ;
+}
+.i5{
+   flex-basis: ;
+}
+.i6{
+    flex-basis: ;   
+}
+.i7{
+   flex-basis: ; 
 }
