@@ -10,37 +10,26 @@
 .container{
     background: lightcyan;
     display: flex;
-    flex-flow: wrap;
-    height: 200px;
+    flex-flow: row nowrap;
 }
 
 .item{
     background: lightcoral;
     border: 1px solid;
     text-align: center;
-    margin: 4px;
-    flex: 1;
 }
-
-.i1{
-    flex-basis: 700px;
+.A{
+   flex-basis: 250px;
+   flex-shrink: 2;
+   flex-grow: 0;
+}
+.B{
+    flex-basis: 250px;
     flex-shrink: 0;
+    flex-grow: 2;
 }
-.i2{
-    flex-basis: ;
-}
-.i3{
-   flex-basis: ;
-}
-.i4{
-    flex-basis: ;
-}
-.i5{
-   flex-basis: ;
-}
-.i6{
-    flex-basis: ;   
-}
-.i7{
-   flex-basis: ; 
+.C{
+    flex-basis: 250px;
+    flex-shrink: 1;
+    flex-grow: 1;
 }

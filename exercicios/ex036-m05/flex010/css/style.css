@@ -10,37 +10,16 @@
 .container{
     background: lightcyan;
     display: flex;
-    flex-flow: wrap;
-    height: 200px;
+    flex-flow: nowrap;
 }
 
 .item{
     background: lightcoral;
     border: 1px solid;
+    
     text-align: center;
     margin: 4px;
-    flex: 1;
-}
-
-.i1{
-    flex-basis: 700px;
-    flex-shrink: 0;
-}
-.i2{
-    flex-basis: ;
-}
-.i3{
-   flex-basis: ;
-}
-.i4{
-    flex-basis: ;
-}
-.i5{
-   flex-basis: ;
-}
-.i6{
-    flex-basis: ;   
-}
-.i7{
-   flex-basis: ; 
+    flex-basis: 100px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
