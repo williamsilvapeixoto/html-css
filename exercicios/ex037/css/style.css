@@ -81,16 +81,18 @@ main{
 
 main h2{
     margin-bottom: 20px;
+    margin-left: -20px;
+    padding-left: 20px;
     background: linear-gradient(to right, gray, white);
 }
 
 section.p{
     display: flex;
-    flex-flow: wrap;
+    flex-flow: row wrap;
     gap: 20px;
 }
 
 p{
     text-indent: 20px;
-    flex: 1 0 300px;
+    flex: 1 0 350px;
 }
